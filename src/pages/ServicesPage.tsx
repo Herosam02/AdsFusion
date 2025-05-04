@@ -148,7 +148,6 @@ const ServicesPage = () => {
 
                   {/* Centered 3D sphere */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                    <ThreeDSphere size="w-48 h-48" position="relative" />
                   </div>
                 </div>
               </motion.div>
