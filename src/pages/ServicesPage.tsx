@@ -3,6 +3,11 @@ import { Bot, BrainCircuit, Code, Database, LineChart, ShieldCheck, CheckCircle 
 import ThreeDSphere from '../components/ThreeDSphere';
 import Button from '../components/common/Button';
 import { Link } from 'react-router-dom';
+import image from './pexels-photo-8386440.webp';
+import image1 from './photo-1694903110330-cc64b7e1d21d.avif';
+import image2 from './pexels-photo-7551644.webp';
+import image3 from './photo-1657727534685-36b09f84e193.avif';
+import image4 from './pexels-photo-7658435.jpeg';
 
 // Animation variants
 const fadeIn = {
@@ -110,7 +115,7 @@ const ServicesPage = () => {
 
                   {/* Clear image without blend mode */}
                   <img
-                    src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src={image}
                     alt="AI Automation"
                     className="w-full h-full object-cover"
                   />
@@ -141,7 +146,7 @@ const ServicesPage = () => {
 
                   {/* Image without blend mode to preserve natural color */}
                   <img
-                    src="https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={image1}
                     alt="AI Agents"
                     className="w-full h-full object-cover"
                   />
@@ -262,7 +267,7 @@ const ServicesPage = () => {
 
                   {/* Image without blend mode for natural display */}
                   <img
-                    src="https://images.pexels.com/photos/7551644/pexels-photo-7551644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src={image2}
                     alt="Software Consultancy"
                     className="w-full h-full object-cover"
                   />
@@ -289,7 +294,7 @@ const ServicesPage = () => {
 
                   {/* Clean image without blend mode or dark dimming */}
                   <img
-                    src="https://images.unsplash.com/photo-1657727534685-36b09f84e193?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={image3}
                     alt="AI Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -406,7 +411,7 @@ const ServicesPage = () => {
 
                   {/* Image without blending or dark mode styling */}
                   <img
-                    src="https://images.pexels.com/photos/7658435/pexels-photo-7658435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src={image4}
                     alt="AI Advisory"
                     className="w-full h-full object-cover"
                   />

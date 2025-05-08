@@ -4,6 +4,8 @@ import { BrainCircuit, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../../hooks/useAuth';
 import ThemeToggle from '../common/ThemeToggle';
+import img from './Adsfusion 1 (Black).png';
+import img2 from './Adsfusion2(White).png';
 
 const navLinks = [
   { path: '/', label: 'Home' },
@@ -49,10 +51,24 @@ const Navbar = () => {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
-              <BrainCircuit className="w-8 h-8 text-primary-500" />
             </motion.div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent">
-              AdsFusion
+            <span>
+              {/* Black logo for light mode */}
+              <img
+                src={img}
+                alt="Logo"
+                height={30}
+                width={130}
+                className="block dark:hidden"
+              />
+              {/* White logo for dark mode */}
+              <img
+                src={img2}  // replace this with your white logo path
+                alt="Logo"
+                height={30}
+                width={130}
+                className="hidden dark:block"
+              />
             </span>
           </Link>
 

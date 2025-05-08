@@ -3,6 +3,11 @@ import { Users, Award, Heart, Zap } from 'lucide-react';
 import ThreeDSphere from '../components/ThreeDSphere';
 import { Link } from 'react-router-dom';
 import Button from '../components/common/Button';
+import lady from './pexels-photo-6953671.jpeg';
+import ceo from './download.jpg';
+import cto from './downloa.jpg';
+import ai from './downlo.jpg';
+
 
 // Animation variants
 const fadeIn = {
@@ -77,7 +82,7 @@ const AboutPage = () => {
               className="relative flex justify-center items-center"
             >
               <div className="absolute inset-0 from-primary-300/20 to-transparent dark:from-primary-800/20 rounded-full"></div>
-              <img src="https://images.pexels.com/photos/6953671/pexels-photo-6953671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              <img src={lady} alt="" />
             </motion.div>
           </div>
         </div>
@@ -184,19 +189,19 @@ const AboutPage = () => {
                 name: 'Alex Johnson',
                 role: 'CEO & AI Research Director',
                 bio: 'With over 15 years of experience in AI and machine learning, Alex leads our strategic direction and research initiatives.',
-                image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg'
+                image: ceo
               },
               {
                 name: 'Sarah Chen',
                 role: 'CTO & Head of Engineering',
                 bio: 'Sarah oversees our technical operations and development teams, ensuring the delivery of cutting-edge solutions.',
-                image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg'
+                image: cto
               },
               {
                 name: 'Michael Rivera',
                 role: 'Chief AI Solutions Architect',
                 bio: 'Michael specializes in designing custom AI solutions that address complex business challenges across industries.',
-                image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg'
+                image: ai
               },
               // {
               //   name: 'Emily Taylor',
